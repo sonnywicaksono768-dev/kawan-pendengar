@@ -210,7 +210,7 @@ export async function classifyRisk(recentUserMessages: string[]): Promise<RiskLe
         {
           role: "assistant",
           content:
-            "Klasifikasikan risiko pada pesan pengguna. Jawab hanya dengan satu kata: SAFE, RISK, atau CRISIS. SAFE berarti tidak ada sinyal menyakiti diri. RISK berarti ada sinyal tersirat seperti keinginan menghilang atau capek hidup. CRISIS berarti ada niat atau metode menyakiti diri yang jelas.",
+            "Klasifikasikan risiko menyakiti diri pada pesan pengguna. Jawab hanya dengan satu kata: SAFE, RISK, atau CRISIS. SAFE berarti tidak ada sinyal menyakiti diri: stres, capek karena kerja atau aktivitas, kesepian, sedih, kecewa, atau curhat sehari-hari tanpa keinginan mati/menghilang/menyakiti diri adalah SAFE. RISK berarti sinyal tersirat ingin mati atau menghilang seperti pengen ngilang, capek hidup, lebih baik aku tidak ada, tanpa metode jelas. CRISIS berarti niat atau metode menyakiti diri yang jelas seperti mau bunuh diri atau mengakhiri hidup. Bedakan capek biasa (SAFE) dari capek hidup (RISK).",
         },
         { role: "user", content: text },
       ],

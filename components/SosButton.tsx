@@ -129,12 +129,20 @@ export function SosButton({ compact = false }: SosButtonProps) {
         type="button"
         ref={triggerRef}
         className={compact ? "btn btn-danger btn-sm" : "btn btn-danger"}
+        aria-label="Bantuan darurat"
         aria-haspopup="dialog"
         aria-expanded={open}
         onClick={() => setOpen(true)}
       >
         <Icon name="life-buoy" />
-        <span>Bantuan darurat</span>
+        {compact ? (
+          <>
+            <span className="sos-label-full" aria-hidden="true">Bantuan darurat</span>
+            <span className="sos-label-short" aria-hidden="true">Darurat</span>
+          </>
+        ) : (
+          <span>Bantuan darurat</span>
+        )}
       </button>
       {dialog}
     </>

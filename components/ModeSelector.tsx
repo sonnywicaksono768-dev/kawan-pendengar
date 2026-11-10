@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useId, useRef } from "react";
 import type { ChatMode } from "@/lib/validate";
 
 const MODES: Array<{ value: ChatMode; label: string }> = [
@@ -19,6 +19,7 @@ type ModeSelectorProps = {
 };
 
 export function ModeSelector({ mode, onChange, disabled = false }: ModeSelectorProps) {
+  const selectId = useId();
   const refs = useRef<Array<HTMLButtonElement | null>>([]);
 
   function onKeyDown(event: React.KeyboardEvent<HTMLButtonElement>, index: number) {
@@ -37,27 +38,44 @@ export function ModeSelector({ mode, onChange, disabled = false }: ModeSelectorP
   }
 
   return (
-    <div className="mode-tabs" role="tablist" aria-label="Mode obrolan">
-      {MODES.map((item, index) => (
-        <button
-          key={item.value}
-          type="button"
-          role="tab"
-          id={`mode-tab-${item.value}`}
-          aria-selected={mode === item.value}
+    <>
+      <div className="mode-picker">
+        <label className="field-label" htmlFor={selectId}>Mode obrolan</label>
+        <select
+          id={selectId}
+          className="input"
+          value={mode}
+          onChange={(event) => onChange(event.target.value as ChatMode)}
           aria-controls="chat-panel"
-          tabIndex={mode === item.value ? 0 : -1}
-          ref={(element) => {
-            refs.current[index] = element;
-          }}
-          className="mode-tab"
-          onClick={() => onChange(item.value)}
-          onKeyDown={(event) => onKeyDown(event, index)}
           disabled={disabled}
         >
-          {item.label}
-        </button>
-      ))}
-    </div>
+          {MODES.map((item) => (
+            <option key={item.value} value={item.value}>{item.label}</option>
+          ))}
+        </select>
+      </div>
+      <div className="mode-tabs" role="tablist" aria-label="Mode obrolan">
+        {MODES.map((item, index) => (
+          <button
+            key={item.value}
+            type="button"
+            role="tab"
+            id={`mode-tab-${item.value}`}
+            aria-selected={mode === item.value}
+            aria-controls="chat-panel"
+            tabIndex={mode === item.value ? 0 : -1}
+            ref={(element) => {
+              refs.current[index] = element;
+            }}
+            className="mode-tab"
+            onClick={() => onChange(item.value)}
+            onKeyDown={(event) => onKeyDown(event, index)}
+            disabled={disabled}
+          >
+            {item.label}
+          </button>
+        ))}
+      </div>
+    </>
   );
 }

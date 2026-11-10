@@ -77,7 +77,7 @@ export function MessageInput({
       </div>
 
       <div className="composer-meta">
-        <span id={hintId}>
+        <span id={hintId} className={crisisMode ? undefined : "keyboard-hint"}>
           {crisisMode
             ? "Aku tetap di sini. Kalau kamu merasa tidak aman, hubungi bantuan darurat."
             : "Enter untuk kirim, Shift dan Enter untuk baris baru."}

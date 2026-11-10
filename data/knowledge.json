@@ -1,0 +1,50 @@
+[
+  {
+    "id": "grounding-54321",
+    "tags": ["cemas", "panik", "grounding", "tegang", "overthinking"],
+    "title": "Latihan grounding 5-4-3-2-1",
+    "content": "Ajak pengguna menyebutkan 5 hal yang bisa dilihat, 4 hal yang bisa disentuh, 3 suara yang bisa didengar, 2 bau yang bisa dicium, dan 1 rasa di mulut. Lakukan perlahan, satu indra setiap kali. Tujuannya mengembalikan perhatian ke ruang saat ini."
+  },
+  {
+    "id": "breathing-box",
+    "tags": ["panik", "cemas", "napas", "pernapasan", "grounding"],
+    "title": "Pernapasan kotak 4-4-4-4",
+    "content": "Tarik napas 4 hitungan, tahan 4 hitungan, buang napas 4 hitungan, tahan 4 hitungan. Ulangi 4 kali. Kalau menahan napas terasa tidak nyaman, cukup tarik dan buang napas perlahan tanpa menahan."
+  },
+  {
+    "id": "thought-record",
+    "tags": ["cbt", "pikiran", "pola pikir", "catatan pikiran", "salah paham"],
+    "title": "Catatan pikiran ala CBT ringan",
+    "content": "Susun lima bagian: situasi yang terjadi, pikiran otomatis yang muncul, perasaan dan intensitasnya, bukti yang mendukung dan yang membantah pikiran itu, lalu satu pikiran yang lebih seimbang. Pikiran seimbang tidak harus positif, cukup jujur dan tidak menghukum diri."
+  },
+  {
+    "id": "cognitive-distortions",
+    "tags": ["pikiran", "distorsi", "pola pikir", "self talk"],
+    "title": "Pola pikir yang sering menyulitkan",
+    "content": "Beberapa pola umum: membaca pikiran orang lain, menganggap satu kejadian menggambarkan seluruh hidup, hanya melihat sisi buruk, dan menuntut diri dengan kata harus. Pola ini bukan diagnosis, hanya cara mengenali kebiasaan berpikir."
+  },
+  {
+    "id": "stress-anxiety-burnout",
+    "tags": ["stres", "cemas", "burnout", "lelah", "kuliah", "kerja"],
+    "title": "Bedanya stres, cemas, dan burnout secara umum",
+    "content": "Stres biasanya muncul karena tuntutan yang jelas dan mereda saat tuntutan selesai. Kecemasan lebih soal kekhawatiran yang bertahan meski pemicunya tidak ada. Burnout adalah kelelahan mendalam karena tekanan berkepanjangan, sering disertai rasa jauh dari pekerjaan atau orang lain. Ini penjelasan umum, bukan diagnosis."
+  },
+  {
+    "id": "when-to-seek-help",
+    "tags": ["bantuan", "profesional", "psikolog", "psikiater", "kapan"],
+    "title": "Kapan sebaiknya mencari bantuan profesional",
+    "content": "Anjurkan bantuan profesional bila keluhan sudah berlangsung berminggu-minggu, mengganggu tidur, makan, sekolah, atau kerja, membuat pengguna menjauh dari orang lain, atau bila ada pikiran menyakiti diri. Psikolog dan psikiater bisa membantu menilai dan mendampingi."
+  },
+  {
+    "id": "values-prompts",
+    "tags": ["nilai", "spark", "arah", "makna", "tujuan"],
+    "title": "Pertanyaan untuk menemukan hal yang bermakna",
+    "content": "Beberapa pertanyaan pemandu: kapan terakhir kali kamu merasa benar-benar hidup, aktivitas apa yang membuatmu lupa waktu, hal apa yang kamu lakukan meski tidak diminta, dan apa yang ingin kamu lakukan lebih sering kalau waktu tidak menjadi masalah."
+  },
+  {
+    "id": "support-network",
+    "tags": ["kesepian", "sendiri", "dukungan", "teman", "keluarga"],
+    "title": "Membangun dukungan yang nyata",
+    "content": "Bantu pengguna menyebut satu orang yang terasa aman, lalu satu langkah kecil untuk menyapa orang itu, misalnya mengirim pesan singkat. Dukungan nyata tidak menuntut penjelasan panjang, cukup kehadiran."
+  }
+]

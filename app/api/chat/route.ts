@@ -17,6 +17,9 @@ import { checkOutput, recordViolations } from "@/lib/guard";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+// Vercel Hobby defaults to 10s; the tunnel + free-model round trip (and a possible
+// regeneration) needs more headroom. 60s is the Hobby ceiling.
+export const maxDuration = 60;
 
 const MESSAGES = {
   invalid: "Pesanmu belum bisa kuproses, coba tulis ulang ya.",

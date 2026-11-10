@@ -1,18 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
+// Self-hosted so the build never fetches Google Fonts at build time (Vercel's
+// build egress to fonts.googleapis.com fails and crashes next/font/google).
+const jakarta = localFont({
+  src: "./fonts/plus-jakarta-sans-latin.woff2",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: "400 700",
   variable: "--font-jakarta",
 });
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
+const fraunces = localFont({
+  src: "./fonts/fraunces-latin.woff2",
   display: "swap",
-  weight: ["400", "500", "600"],
+  weight: "400 600",
   variable: "--font-fraunces",
 });
 
